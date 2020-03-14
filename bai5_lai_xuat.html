@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let yourMoney=Number(prompt("nhap so tien bạn vay: "));
+    let month=Number(prompt("nhap so thang : "));
+    let interest=Number(prompt("nhap lai xuat tren tháng(%): "));
+    let x=(interest/100);
+   for (i=1;i<month;i++){
+       yourMoney+=(yourMoney*x*month);
+   }
+    document.write("tong so tien bạn phải trả la: "+yourMoney);
+
+
+
+</script>
+</body>
+</html>
